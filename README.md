@@ -65,10 +65,9 @@ Add notes about how to use the system.
 Add additional notes about how to deploy this on a live system.
 
 ## ⛏️ Built Using <a name = "built_using"></a>
-- [MongoDB](https://www.mongodb.com/) - Database
-- [Express](https://expressjs.com/) - Server Framework
-- [VueJs](https://vuejs.org/) - Web Framework
-- [NodeJs](https://nodejs.org/en/) - Server Environment
+- [Jupyter Notebook](https://jupyter.org/) - web application for creating and sharing computational documents
+- [Visual Studio Code](https://code.visualstudio.com/Download) - code editor
+- [Python](https://www.python.org/downloads/) - programming language
 
 ## 📑 Documentation <a name="documentation"></a>
 - The paper studied in order to implement the model is:
