@@ -1,9 +1,9 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=200px height=200px src="./assets/logo.png" alt="Project logo"></a>
+ <img width=200px height=200px src="./assets/face-scan.png" alt="Project logo"></a>
 </p>
 
-<h3 align="center">Machine Learning Project Title</h3>
+<h3 align="center">Eigenfaces</h3>
 
 
 <p align="center"> Few lines describing your project.
