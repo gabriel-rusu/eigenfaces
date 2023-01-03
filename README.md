@@ -6,8 +6,8 @@
 <h3 align="center">Eigenfaces</h3>
 
 
-<p align="center"> Few lines describing your project.
-    <br> 
+<p align="center"> 
+    Face recognition algorithm that follows the observations from the research paper <i>Face Recognition Using Eigenfaces</i> to build a face space and find the projections of the train and test faces.
 </p>
 
 ## 📝 Table of Contents
@@ -22,7 +22,7 @@
 - [Acknowledgments](#acknowledgement)
 
 ## 🧐 About <a name = "about"></a>
-Write about 1-2 paragraphs describing the purpose of your project.
+An eigenface is the name given to a set of eigenvectors when used in the computer vision problem of human face recognition. The approach of using eigenfaces for recognition was developed by Sirovich and Kirby and used by Matthew Turk and Alex Pentland in face classification. The eigenvectors are derived from the covariance matrix of the probability distribution over the high-dimensional vector space of face images.
 
 ## ⚡ Quick Start <a name="quick_start"></a>
 
