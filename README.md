@@ -68,8 +68,9 @@ Add notes about how to use the system.
 - [Python](https://www.python.org/downloads/) - programming language
 
 ## 📑 Documentation <a name="documentation"></a>
-- The paper studied in order to implement the model is:
+- The papers studied in order to implement the model are:
   - [Turk, Matthew & Pentland, A.P.. (1991). Face Recognition Using Eigenfaces. Proceedings IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR). 586 - 591. 10.1109/CVPR.1991.139758.](https://sites.cs.ucsb.edu/~mturk/Papers/mturk-CVPR91.pdf)
+  - [Pentland, Moghaddam and Starner, "View-based and modular eigenspaces for face recognition," 1994 Proceedings of IEEE Conference on Computer Vision and Pattern Recognition, Seattle, WA, USA, 1994, pp. 84-91, doi: 10.1109/CVPR.1994.323814.](https://ieeexplore.ieee.org/abstract/document/323814)
 
 ## ✍️ Authors <a name = "authors"></a>
 - [@gabriel-rusu](https://github.com/gabriel-rusu) - Idea & Initial work
