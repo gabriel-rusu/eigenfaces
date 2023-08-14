@@ -30,6 +30,7 @@ Want to play with these notebooks online without having to install anything? Use
 
 <b>WARNING:</b> Please be aware that these services provide temporary environments: anything you do will be deleted after a while, so make sure you download any data you care about.
 
+ADD A GOOGLE COLAB LINK
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
