@@ -130,3 +130,5 @@ dmypy.json
 
 # Mac OS - File System
 .DS_Store
+./*/.DS_Store
+.idea/
