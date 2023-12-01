@@ -2,13 +2,16 @@ import os
 from PIL import Image
 import numpy as np
 
+from src.dataset.transformations import ToVec
+
 
 class EigenFaces:
 
-    def __init__(self, data_path, split):
+    def __init__(self, data_path, split, transformations=None):
         self.data_path = data_path
         self.split = split
         self.current_idx = 0
+        self.transformations = transformations
         self.images = self.__load_images()
 
     def __load_images(self):
@@ -23,15 +26,16 @@ class EigenFaces:
 
         return images
 
-    def __transform_to_vec(self):
-        for person_face in self.images:
-            self.images[person_face] = list(map(lambda img: img.reshape(-1, 1), self.images[person_face]))
-        return self.images
+    def __apply_transform(self, image):
+        if self.transformations:
+            for transformation in self.transformations:
+                image = transformation(image)
+        return image
 
     def __compute_average(self):
         average_face = {}
         for person_face in self.images:
-            person_faces = self.images[person_face]
+            person_faces = ToVec(self.images[person_face])
             average_face[person_face] = np.sum(person_faces, axis=0) / len(person_faces)
         return average_face
 
@@ -54,4 +58,4 @@ class EigenFaces:
         else:
             idx = self.current_idx
             self.current_idx += 1
-            return self.images[idx]
+            return self.__apply_transform(self.images[idx])
