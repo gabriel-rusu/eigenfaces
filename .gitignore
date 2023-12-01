@@ -68,8 +68,8 @@ instance/
 # Scrapy stuff:
 .scrapy
 
-# Sphinx documentation
-docs/_build/
+# Sphinx docs
+assets/docs/_build/
 
 # PyBuilder
 target/
@@ -117,7 +117,7 @@ venv.bak/
 # Rope project settings
 .ropeproject
 
-# mkdocs documentation
+# mkdocs docs
 /site
 
 # mypy
@@ -130,3 +130,5 @@ dmypy.json
 
 # Mac OS - File System
 .DS_Store
+./*/.DS_Store
+.idea/

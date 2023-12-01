@@ -1,0 +1,4 @@
+numpy
+Pillow
+tqdm
+opencv-python==4.8.1.78
