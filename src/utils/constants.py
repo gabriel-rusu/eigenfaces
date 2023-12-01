@@ -12,6 +12,6 @@ class DatasetSplit:
     TRAIN = 'train'
     TEST = 'test'
 
-class DatasetStatistics:
-    MEAN: Final[str] = 'mean'
-    STD: Final[str] = 'std'
+
+class BestParams:
+    NUM_EIGEN_VECTORS = 14  # best number of eigen vectors for the dataset

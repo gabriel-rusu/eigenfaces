@@ -1,3 +1,4 @@
 numpy
 Pillow
-opencv-python
+tqdm
+opencv-python==4.8.1.78
