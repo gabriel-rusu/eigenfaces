@@ -1,6 +1,9 @@
 import numpy as np
 
-from src.utils.constants import BestParams
+try:
+    from eigenfaces.src.utils.constants import BestParams
+except ModuleNotFoundError:
+    from src.utils.constants import BestParams
 
 
 def face_covariance_matrix(face):

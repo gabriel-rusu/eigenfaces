@@ -1,9 +1,12 @@
 import os
-from PIL import Image
-import numpy as np
 
-from src.dataset.transformations import ToVec
-from src.utils.constants import Paths, DatasetSplit
+import numpy as np
+from PIL import Image
+
+try:
+    from eigenfaces.src.dataset.transformations import ToVec
+except ModuleNotFoundError:
+    from src.dataset.transformations import ToVec
 
 
 class EigenFaces:

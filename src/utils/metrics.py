@@ -1,7 +1,11 @@
 import numpy as np
 from tqdm.notebook import tqdm
 
-from src.utils.covariance import compute_eigen_space_distance
+try:
+    from eigenfaces.src.utils.covariance import compute_eigen_space_distance
+except ModuleNotFoundError:
+    from src.utils.covariance import compute_eigen_space_distance
+
 
 
 def compute_accuracy(test_dataset, train_eigen_matrices, mean_train_faces, logging=False, notebook=False):
