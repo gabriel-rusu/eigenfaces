@@ -14,15 +14,15 @@
 - [About](#about)
 - [Quick Start](#quick_start)
 - [Getting Started](#getting_started)
-- [Deployment](#deployment)
-- [Usage](#usage)
 - [Built Using](#built_using)
 - [Documentation](#documentation)
 - [Authors](#authors)
-- [Acknowledgments](#acknowledgement)
 
 ## 🧐 About <a name = "about"></a>
 An eigenface is the name given to a set of eigenvectors when used in the computer vision problem of human face recognition. The approach of using eigenfaces for recognition was developed by Sirovich and Kirby and used by Matthew Turk and Alex Pentland in face classification. The eigenvectors are derived from the covariance matrix of the probability distribution over the high-dimensional vector space of face images.
+
+In this repo, I reimplement the first face recognition algorithm from scratch to better understand the core concept behind eigenvectors and eigenfaces. I tried to keep the code well-organised and clean to make it helpful for others interested in the implementation
+of this paper.
 
 ## ⚡ Quick Start <a name="quick_start"></a>
 
@@ -36,31 +36,25 @@ Want to play with these notebooks online without having to install anything? Use
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
 
 ### Prerequisites
-What things you need to install the software and how to install them.
+In order to locally run the repo you should have the following:
+- [Miniconda](https://docs.conda.io/projects/miniconda/en/latest/miniconda-install.html)
 
-```
-Give examples
-```
 
 ### Installing
-A step by step series of examples that tell you how to get a development env running.
+If you want to run the code on your local machine, you need to follow the next steps.
 
-Say what the step will be
+ 1. First you need to create a conda environment with the following command:
 
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
+```bash
+conda create --name eigenfaces --file requirements.txt python=3.10
 ```
 
-End with an example of getting some data out of the system or using it for a little demo.
+  2. Secondly, you need to activate the environment:
 
-## 🎈 Usage <a name="usage"></a>
-Add notes about how to use the system.
+```bash
+conda activate eigenfaces
+```
+  3. Open in the editor of your choice the notebook eigenfaces from the folder src/notebooks
 
 
 ## ⛏️ Built Using <a name = "built_using"></a>
@@ -75,6 +69,3 @@ Add notes about how to use the system.
 
 ## ✍️ Authors <a name = "authors"></a>
 - [@gabriel-rusu](https://github.com/gabriel-rusu) - Idea & Initial work
-
-## 🎉 Acknowledgements <a name = "acknowledgement"></a>
-- Hat tip to anyone whose code was used
