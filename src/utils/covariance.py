@@ -1,5 +1,4 @@
 import numpy as np
-import cv2
 
 from src.utils.constants import BestParams
 
@@ -46,6 +45,3 @@ def compute_eigen_space_distance(image, eigen_matrix, mean):
     identity = np.identity(eigen_matrix.shape[0])
 
     return (identity - eigen_matrix @ eigen_matrix.T) @ (image - mean)
-
-
-
